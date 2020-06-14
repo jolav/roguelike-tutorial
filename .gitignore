@@ -1,0 +1,16 @@
+# Ignore these directories
+_aux/
+logs/
+tmp/
+_data/
+bearlibterminal/
+
+# Ignore these files
+.air.conf
+.env
+a_private.go
+_private.json
+go.sum
+
+# Ignore binaries
+rogue
