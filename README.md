@@ -39,3 +39,8 @@ Package in the same folder
 - assets folder
 
 enter the folder and double click roguelike.exe
+
+
+## Part 2 - The generic Entity, the render functions, and the map
+
+[Gif Part 2](https://github.com/jolav/roguelike-tutorial/tree/master/assets/gifs/part2.gif)

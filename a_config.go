@@ -15,18 +15,22 @@ type Configuration struct {
 	Font2        string `json:"font2"`
 	FontSize1    int    `json:"fontSize1"`
 	FontSize2    int    `json:"fontSize2"`
+	MapWidth     int    `json:"mapWidth"`
+	MapHeight    int    `json:"mapHeight"`
 }
 
 func getGlobalConfigJSON() (configjson []byte) {
 	configjson = []byte(`
 	{
-		"screenWidth": 80,
-		"screenHeight": 50,
+		"screenWidth": 40,
+		"screenHeight": 30,
 		"windowTitle": "Roguelike Tutorial 2020",
 		"font1": "assets/fonts/square.ttf",
 		"font2": "assets/fonts/ubuntuMono.ttf",
-		"fontSize1": 10,
-		"fontSize2": 12
+		"fontSize1": 12,
+		"fontSize2": 12,
+		"mapWidth": 40,
+		"mapHeight": 20
 	}
 	`)
 	return
