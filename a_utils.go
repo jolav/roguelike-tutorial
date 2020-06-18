@@ -21,6 +21,7 @@ func loadConfigJSON(c *Configuration) {
 		log.Fatal("Error parsing JSON config => \n", err)
 	}
 }
+
 func checkFlags() {
 	versionFlag := flag.Bool("v", false, "Show current version and exit")
 	flag.Parse()

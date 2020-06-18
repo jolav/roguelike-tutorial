@@ -1,6 +1,15 @@
+![Version](https://img.shields.io/badge/version-0.0.3-orange.svg)  
+![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  
+
 # Roguelike-tutorial-2020
 
-!["ID: in rainbow text: 'Roguelikedev does the Complete Roguelike Tutorial' and in gray text in the corner: 'v4.0 2020.6-7', over a grayscale ascii dungeon"](https://i.imgur.com/sgsO37A.png)
+!["ID: in rainbow text: 'Roguelikedev does the Complete Roguelike Tutorial' and in gray text in the corner: 'v4.0 2020.6-7', over a grayscale ascii dungeon"](https://i.imgur.com/sgsO37A.png)  
+
+## Part 2 - The generic Entity, the render functions, and the map 
+
+Added Camera
+
+![Gif Part 2](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part2.gif)
 
 
 ## Compilation on Linux
@@ -41,9 +50,6 @@ Package in the same folder
 enter the folder and double click roguelike.exe
 
 
-## Part 2 - The generic Entity, the render functions, and the map
-
-![Gif Part 2](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part2.gif)
 
 
 

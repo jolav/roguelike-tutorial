@@ -17,20 +17,26 @@ type Configuration struct {
 	FontSize2    int    `json:"fontSize2"`
 	MapWidth     int    `json:"mapWidth"`
 	MapHeight    int    `json:"mapHeight"`
+	CameraWidth  int    `json:"cameraWidth"`
+	CameraHeight int    `json:"cameraHeight"`
 }
+
+// map cant be small than camera
 
 func getGlobalConfigJSON() (configjson []byte) {
 	configjson = []byte(`
 	{
-		"screenWidth": 40,
+		"screenWidth": 30, 
 		"screenHeight": 30,
 		"windowTitle": "Roguelike Tutorial 2020",
 		"font1": "assets/fonts/square.ttf",
 		"font2": "assets/fonts/ubuntuMono.ttf",
-		"fontSize1": 12,
+		"fontSize1": 10,
 		"fontSize2": 12,
 		"mapWidth": 40,
-		"mapHeight": 20
+		"mapHeight": 40,
+		"cameraWidth": 30,
+		"cameraHeight": 30
 	}
 	`)
 	return

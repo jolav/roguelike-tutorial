@@ -2,11 +2,6 @@
 
 package main
 
-type Tile struct {
-	Blocked  bool
-	BlockLOS bool
-}
-
 type GameMap struct {
 	Width  int
 	Height int

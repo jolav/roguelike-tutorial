@@ -9,11 +9,12 @@ import (
 	"time"
 )
 
-var version = "v0.0.2"
+var version = "v0.0.3"
 var releaseDate = ""
 
 type World struct {
 	Conf     Configuration
+	Camera   *Camera
 	Entities map[string]*Entity
 	Map      *GameMap
 }
@@ -29,7 +30,13 @@ func main() {
 	initBLT(w.Conf)
 
 	w = &World{
-		Conf:     w.Conf,
+		Conf: w.Conf,
+		Camera: &Camera{
+			X:      0,
+			Y:      0,
+			Width:  w.Conf.CameraWidth,
+			Height: w.Conf.CameraHeight,
+		},
 		Entities: make(map[string]*Entity),
 		Map: &GameMap{
 			Width:  w.Conf.MapWidth,
@@ -38,14 +45,16 @@ func main() {
 	}
 
 	var player = &Entity{
-		X:     w.Conf.ScreenWidth/2 - 1,
-		Y:     w.Conf.ScreenHeight/2 - 1,
+		X:     w.Conf.MapWidth/2 - 1,
+		Y:     w.Conf.MapHeight/2 - 1,
+		Layer: 0,
 		Char:  "@",
 		Color: "cyan",
 	}
 	var npc = &Entity{
 		X:     w.Conf.ScreenWidth/2 - 5,
 		Y:     w.Conf.ScreenHeight/2 - 5,
+		Layer: 0,
 		Char:  "0",
 		Color: "red",
 	}
@@ -63,7 +72,7 @@ func gameLoop(w *World) {
 	for {
 		key := readKeyboard()
 		playerAction := keyToAction(key)
-		fmt.Println("Pressed ...", key, " - Action ...", playerAction)
+		//fmt.Println("Pressed ...", key, " - Action ...", playerAction)
 		if playerAction == "exit" {
 			break
 		}
@@ -79,28 +88,30 @@ func gameLoop(w *World) {
 
 func handlePlayerAction(playerAction string, w *World) {
 	player := w.Entities["player"]
-	oldX := player.X
-	oldY := player.Y
+	var dx, dy = 0, 0
 	switch playerAction {
 	case "up":
-		player.move(0, -1)
+		dy = -1
 	case "down":
-		player.move(0, 1)
+		dy = 1
 	case "left":
-		player.move(-1, 0)
+		dx = -1
 	case "right":
-		player.move(1, 0)
+		dx = 1
 	case "upright":
-		player.move(1, -1)
+		dx = 1
+		dy = -1
 	case "upleft":
-		player.move(-1, -1)
+		dx = -1
+		dy = -1
 	case "downright":
-		player.move(1, 1)
+		dx = 1
+		dy = 1
 	case "downleft":
-		player.move(-1, 1)
+		dx = -1
+		dy = 1
 	}
-	if w.Map.Tiles[player.X][player.Y].Blocked {
-		player.X = oldX
-		player.Y = oldY
+	if !w.Map.Tiles[player.X+dx][player.Y+dy].Blocked {
+		player.move(dx, dy)
 	}
 }
