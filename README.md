@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.0.3-orange.svg)  
+![Version](https://img.shields.io/badge/version-0.0.4-orange.svg)  
 ![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  
 
 # Roguelike-tutorial-2020

@@ -7,7 +7,9 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"math/rand"
 	"os"
+	"time"
 )
 
 func prettyPrintStruct(s interface{}) {
@@ -31,4 +33,9 @@ func checkFlags() {
 		fmt.Printf("Date   :\t: %s\n", releaseDate)
 		os.Exit(0)
 	}
+}
+
+func randomInt(min, max int) int {
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	return r.Intn(max-min+1) + min
 }

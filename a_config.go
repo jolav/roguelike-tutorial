@@ -26,18 +26,18 @@ type Configuration struct {
 func getGlobalConfigJSON() (configjson []byte) {
 	configjson = []byte(`
 	{
-		"screenWidth": 30, 
-		"screenHeight": 30,
+		"screenWidth": 100, 
+		"screenHeight":100,
 		"windowTitle": "Roguelike Tutorial 2020",
 		"font1": "assets/fonts/square.ttf",
 		"font2": "assets/fonts/ubuntuMono.ttf",
-		"fontSize1": 10,
-		"fontSize2": 12,
-		"mapWidth": 40,
-		"mapHeight": 40,
-		"cameraWidth": 30,
-		"cameraHeight": 30
-	}
+		"fontSize1": 6,
+		"fontSize2": 12,  
+		"mapWidth": 100,
+		"mapHeight": 100,
+		"cameraWidth": 100,
+		"cameraHeight": 100 
+		}
 	`)
 	return
 }

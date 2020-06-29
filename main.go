@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-var version = "v0.0.3"
+var version = "v0.0.4"
 var releaseDate = ""
 
 type World struct {
@@ -51,17 +51,17 @@ func main() {
 		Char:  "@",
 		Color: "cyan",
 	}
-	var npc = &Entity{
+	/*var npc = &Entity{
 		X:     w.Conf.ScreenWidth/2 - 5,
 		Y:     w.Conf.ScreenHeight/2 - 5,
 		Layer: 0,
 		Char:  "0",
 		Color: "red",
-	}
+	}*/
 	w.Entities["player"] = player
-	w.Entities["npc"] = npc
+	//w.Entities["npc"] = npc
 
-	w.Map.InitializeMap()
+	w.Map.initializeMap()
 	//prettyPrintStruct(w)
 	gameLoop(w)
 }
