@@ -7,6 +7,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"math"
 	"math/rand"
 	"os"
 	"time"
@@ -38,4 +39,8 @@ func checkFlags() {
 func randomInt(min, max int) int {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	return r.Intn(max-min+1) + min
+}
+
+func round(f float64) float64 {
+	return math.Floor(f + .5)
 }

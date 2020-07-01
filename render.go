@@ -14,6 +14,7 @@ func renderAll(w *World) {
 	fmt.Println(w.Entities["player"].X, w.Entities["player"].Y)
 	renderMap(w.Map, w.Camera)
 	renderEntities(w.Camera, w.Entities)
+	//blt.PrintExt(5, 5, 200, 30, blt.TK_ALIGN_DEFAULT, "[color=orange][font=ubuntu]HI ROGUELIKE-DEV[/color]")
 	blt.Refresh()
 }
 
@@ -29,19 +30,22 @@ func renderMap(m *GameMap, cam *Camera) {
 		for y := cam.Y; y < cam.Y+cam.Height; y++ {
 			camX, camY := cam.mapToCameraCoords(x, y)
 			m.Tiles[x][y].render(camX, camY)
-
 		}
 	}
 }
 
 func initBLT(c Configuration) {
 	blt.Open()
+
+	fontSize2 := "size=" + strconv.Itoa(c.FontSize2)
+	blt.Set("ubuntu font: " + c.Font2 + ", " + fontSize2)
+
 	size := "size=" + strconv.Itoa(c.ScreenWidth) + "x"
 	size += strconv.Itoa(c.ScreenHeight)
 	title := "title='" + c.Title + "'"
 	window := "window: " + size + "," + title
-	fontSize := "size=" + strconv.Itoa(c.FontSize1)
-	font := "font: " + c.Font1 + ", " + fontSize
+	fontSize := "size=" + strconv.Itoa(c.SquareSize)
+	font := "font: " + c.Square + ", " + fontSize
 	blt.Set(window + "; " + font)
 
 	/*

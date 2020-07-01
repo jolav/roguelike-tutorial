@@ -186,7 +186,7 @@ func (m *GameMap) createSingleRoomInCenter() {
 }
 
 func (m *GameMap) fillWall(w *Wall) {
-	m.Tiles[w.X][w.Y] = &Tile{false, false}
+	m.Tiles[w.X][w.Y] = &Tile{false, false, false, false}
 }
 
 func (m *GameMap) fillRectRoom(r *Room) {
@@ -194,7 +194,7 @@ func (m *GameMap) fillRectRoom(r *Room) {
 	originY := r.Y
 	for x := 0; x < r.Width; x++ {
 		for y := 0; y < r.Height; y++ {
-			m.Tiles[originX+x][originY+y] = &Tile{false, false}
+			m.Tiles[originX+x][originY+y] = &Tile{false, false, false, false}
 		}
 	}
 }

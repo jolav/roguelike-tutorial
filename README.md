@@ -1,15 +1,15 @@
-![Version](https://img.shields.io/badge/version-0.0.4-orange.svg)  
+![Version](https://img.shields.io/badge/version-0.0.5-orange.svg)  
 ![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  
 
 # Roguelike-tutorial-2020
 
 !["ID: in rainbow text: 'Roguelikedev does the Complete Roguelike Tutorial' and in gray text in the corner: 'v4.0 2020.6-7', over a grayscale ascii dungeon"](https://i.imgur.com/sgsO37A.png)  
 
-## Part 2 - The generic Entity, the render functions, and the map 
+## CURRENT STATUS GIF
 
-Added Camera
+Part 4 - FIELD OF VIEW
 
-![Gif Part 2](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part2.gif)
+![Gif Part 4](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part4.gif)
 
 
 ## Compilation on Linux

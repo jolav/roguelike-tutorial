@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-var version = "v0.0.4"
+var version = "v0.0.5"
 var releaseDate = ""
 
 type World struct {
@@ -17,6 +17,7 @@ type World struct {
 	Camera   *Camera
 	Entities map[string]*Entity
 	Map      *GameMap
+	Fov      *FieldOfVision
 }
 
 func main() {
@@ -42,6 +43,7 @@ func main() {
 			Width:  w.Conf.MapWidth,
 			Height: w.Conf.MapHeight,
 		},
+		Fov: &FieldOfVision{},
 	}
 
 	var player = &Entity{
@@ -61,12 +63,14 @@ func main() {
 	w.Entities["player"] = player
 	//w.Entities["npc"] = npc
 
+	w.Fov.initFOV()
 	w.Map.initializeMap()
 	//prettyPrintStruct(w)
 	gameLoop(w)
 }
 
 func gameLoop(w *World) {
+	w.Fov.rayCast(w)
 	renderAll(w)
 
 	for {
@@ -79,6 +83,7 @@ func gameLoop(w *World) {
 		if playerAction != "" {
 			handlePlayerAction(playerAction, w)
 		}
+		w.Fov.rayCast(w)
 		renderAll(w)
 	}
 

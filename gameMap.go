@@ -10,7 +10,7 @@ func (m *GameMap) fillMapBlockedTiles() {
 
 	for x := 0; x < m.Width; x++ {
 		for y := 0; y < m.Height; y++ {
-			m.Tiles[x][y] = &Tile{true, true}
+			m.Tiles[x][y] = &Tile{true, true, false, false}
 		}
 	}
 }
