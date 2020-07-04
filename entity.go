@@ -7,11 +7,12 @@ import blt "roguelike/bearlibterminal"
 type Entities map[string]*Entity
 
 type Entity struct {
-	X     int
-	Y     int
-	Layer int
-	Char  string
-	Color string
+	X      int
+	Y      int
+	Layer  int
+	Char   string
+	Color  string
+	Facing rune
 }
 
 func (e *Entity) move(dx, dy int) {

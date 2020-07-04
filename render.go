@@ -3,7 +3,6 @@
 package main
 
 import (
-	"fmt"
 	blt "roguelike/bearlibterminal"
 	"strconv"
 )
@@ -11,7 +10,7 @@ import (
 func renderAll(w *World) {
 	blt.Clear()
 	w.Camera.move(w.Entities["player"], w.Map)
-	fmt.Println(w.Entities["player"].X, w.Entities["player"].Y)
+	//fmt.Println(w.Entities["player"].X, w.Entities["player"].Y)
 	renderMap(w.Map, w.Camera)
 	renderEntities(w.Camera, w.Entities)
 	//blt.PrintExt(5, 5, 200, 30, blt.TK_ALIGN_DEFAULT, "[color=orange][font=ubuntu]HI ROGUELIKE-DEV[/color]")
@@ -53,10 +52,11 @@ func initBLT(c Configuration) {
 	*/
 	blt.Set("palette.darkGrey=#636466")
 	blt.Set("palette.choco=#bdb897")
-	blt.Set("palette.purple=#979cbd")
+	blt.Set("palette.purple=#dd00d7")
 	blt.Set("palette.violet=#b897db")
 	blt.Set("palette.khaki=#d1cdb6")
 	blt.Set("palette.darkbg=#2f2f2f")
+	blt.Set("palette.lightgrey=#444444")
 
 	//blt.BkColor(blt.ColorFromName("darkbg"))
 	blt.Clear()

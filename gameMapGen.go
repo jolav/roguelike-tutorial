@@ -174,8 +174,8 @@ func (m *GameMap) checkIsRoomForFeature(r *Room) bool {
 }
 
 func (m *GameMap) createSingleRoomInCenter() {
-	width := randomInt(MIN_SIZE_ROOM, MAX_SIZE_ROOM)
-	height := randomInt(MIN_SIZE_ROOM, MAX_SIZE_ROOM)
+	width := randomInt(MIN_SIZE_ROOM, MAX_SIZE_ROOM) + 5
+	height := randomInt(MIN_SIZE_ROOM, MAX_SIZE_ROOM) + 5
 	r := &Room{
 		X:      (m.Width - width) / 2,
 		Y:      (m.Height - height) / 2,

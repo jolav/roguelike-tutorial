@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-var version = "v0.0.5"
+var version = "v0.0.6"
 var releaseDate = ""
 
 type World struct {
@@ -47,11 +47,12 @@ func main() {
 	}
 
 	var player = &Entity{
-		X:     w.Conf.MapWidth/2 - 1,
-		Y:     w.Conf.MapHeight/2 - 1,
-		Layer: 0,
-		Char:  "@",
-		Color: "cyan",
+		X:      w.Conf.MapWidth/2 - 1,
+		Y:      w.Conf.MapHeight/2 - 1,
+		Layer:  0,
+		Char:   "@",
+		Color:  "cyan",
+		Facing: 'N',
 	}
 	/*var npc = &Entity{
 		X:     w.Conf.ScreenWidth/2 - 5,
@@ -89,34 +90,4 @@ func gameLoop(w *World) {
 
 	fmt.Println("Closing Window and exit")
 	closeWindow()
-}
-
-func handlePlayerAction(playerAction string, w *World) {
-	player := w.Entities["player"]
-	var dx, dy = 0, 0
-	switch playerAction {
-	case "up":
-		dy = -1
-	case "down":
-		dy = 1
-	case "left":
-		dx = -1
-	case "right":
-		dx = 1
-	case "upright":
-		dx = 1
-		dy = -1
-	case "upleft":
-		dx = -1
-		dy = -1
-	case "downright":
-		dx = 1
-		dy = 1
-	case "downleft":
-		dx = -1
-		dy = 1
-	}
-	if !w.Map.Tiles[player.X+dx][player.Y+dy].Blocked {
-		player.move(dx, dy)
-	}
 }

@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.0.5-orange.svg)  
+![Version](https://img.shields.io/badge/version-0.0.6-orange.svg)  
 ![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  
 
 # Roguelike-tutorial-2020
@@ -7,9 +7,19 @@
 
 ## CURRENT STATUS GIF
 
-Part 4 - FIELD OF VIEW
+Part 4 + DIRECTIONAL FOV
 
-![Gif Part 4](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part4.gif)
+![Gif Part 5](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part5.gif)
+
+
+## CONTROLS  
+
+&uarr; Go Ahead  
+&darr; Go Back  
+&larr; Turn Left  
+&rarr; Turn Right  
+ALT + &larr; Strafe Left  
+ALT + &rarr; Strafe Right  
 
 
 ## Compilation on Linux

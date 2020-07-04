@@ -26,11 +26,11 @@ func (t *Tile) render(x, y int) {
 	} else if t.Explored {
 		if t.Blocked {
 			//blt.BkColor(blt.ColorFromName("darkgb"))
-			blt.Color(blt.ColorFromName("gray"))
+			blt.Color(blt.ColorFromName("lightgrey"))
 			blt.Print(x, y, "#")
 		} else {
 			//blt.BkColor(blt.ColorFromName("darkbg"))
-			blt.Color(blt.ColorFromName("gray"))
+			blt.Color(blt.ColorFromName("lightgrey"))
 			blt.Print(x, y, ".")
 		}
 	}
