@@ -1,5 +1,5 @@
 ![Version](https://img.shields.io/badge/version-0.0.6-orange.svg)  
-![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  
+![Maintained NO](https://jolav.me/_img/code/maintained-no.svg)  
 
 # Roguelike-tutorial-2020
 
