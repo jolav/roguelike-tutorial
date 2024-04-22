@@ -1,15 +1,16 @@
-![Version](https://img.shields.io/badge/version-0.0.6-orange.svg)  
-![Maintained NO](https://jolav.me/_img/code/maintained-no.svg)  
-
-# Roguelike-tutorial-2020
+# Complete Roguelike Tutorial from r/roguelikedev
 
 !["ID: in rainbow text: 'Roguelikedev does the Complete Roguelike Tutorial' and in gray text in the corner: 'v4.0 2020.6-7', over a grayscale ascii dungeon"](https://i.imgur.com/sgsO37A.png)  
+
+1. [Go + BearLibTerminal](#go-bearlibterminal)  
+
+# **Go-BearLibTerminal**
 
 ## CURRENT STATUS GIF
 
 Part 4 + DIRECTIONAL FOV
 
-![Gif Part 5](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/assets/gifs/part5.gif)
+![Gif Part 5](https://raw.githubusercontent.com/jolav/roguelike-tutorial/master/Go/assets/gifs/part5.gif)
 
 
 ## CONTROLS  
