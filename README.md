@@ -2,8 +2,67 @@
 
 !["ID: in rainbow text: 'Roguelikedev does the Complete Roguelike Tutorial' and in gray text in the corner: 'v4.0 2020.6-7', over a grayscale ascii dungeon"](https://i.imgur.com/sgsO37A.png)  
 
-1. [Go + BearLibTerminal](#go-bearlibterminal)  
+3. [Go + Wasm](#go-wasm)  
 2. [Javascript](#javascript)  
+1. [Go + BearLibTerminal](#go-bearlibterminal)  
+
+# **Go-Wasm**  
+
+## **[Play Online](https://roguelike-tutorial-go-wasm.netlify.app/)**  
+
+## ROADMAP
+
+- [X] **Start**
+- [ ] **Setting Up Client-Wasm Relation**
+- [ ] **Moving around @**
+- [ ] **Basic Map**
+- [ ] **Camera**
+- [ ] **Field of View**
+- [ ] **Generating Shelter**
+- [ ] **Placing Enemies**
+- [ ] **Moving Enemies**
+- [ ] **Turn Time System**
+- [ ] **Melee**
+- [ ] **Creating UI**
+- [ ] **Inventory and items**
+- [ ] **Ranged Combat**
+- [ ] **Leaving The Shelter**
+- [ ] **Minimal full playable version**
+
+# **Javascript**  
+
+## **[Play Online](https://roguelike-tutorial-javascript.netlify.app/)**  
+
+## CONTROLS  
+
+NUMPAD  
+"1" -> DOWNLEFT  
+"2" -> DOWN  
+"3" -> DOWNRIGHT  
+"4" -> LEFT  
+"5" -> SKIP  
+"6" -> RIGHT  
+"7" -> UPLEFT  
+"8" -> UP  
+"9" -> UPRIGHT  
+
+KEYBOARD  
+"b" -> DOWNLEFT  
+"j" -> DOWN  
+"n" -> DOWNRIGHT  
+"h" -> LEFT  
+"t" -> SKIP  
+"l" -> RIGHT  
+"y" -> UPLEFT  
+"k" -> UP  
+"u" -> UPRIGHT  
+
+KEYBOARD  
+"q" -> LOOT  
+"1" -> EAT  
+"3" -> HEAL  
+"f" -> FIRE  
+"r" -> SELECT  
 
 # **Go-BearLibTerminal**
 
@@ -60,63 +119,3 @@ Package in the same folder
 - assets folder
 
 enter the folder and double click roguelike.exe
-
-# **Javascript**  
-
-## **[Play Online](https://roguelike-tutorial-javascript.netlify.app/)**  
-
-## CONTROLS  
-
-NUMPAD  
-"1" -> DOWNLEFT  
-"2" -> DOWN  
-"3" -> DOWNRIGHT  
-"4" -> LEFT  
-"5" -> SKIP  
-"6" -> RIGHT  
-"7" -> UPLEFT  
-"8" -> UP  
-"9" -> UPRIGHT  
-
-KEYBOARD  
-"b" -> DOWNLEFT  
-"j" -> DOWN  
-"n" -> DOWNRIGHT  
-"h" -> LEFT  
-"t" -> SKIP  
-"l" -> RIGHT  
-"y" -> UPLEFT  
-"k" -> UP  
-"u" -> UPRIGHT  
-
-KEYBOARD  
-"q" -> LOOT  
-"1" -> EAT  
-"3" -> HEAL  
-"f" -> FIRE  
-"r" -> SELECT  
-
-## ROADMAP
-
-- [X] **0.1.5 History minor change**  
-- [X] **0.1.4 Refactoring: history has its own class/object**  
-- [X] **0.1.3 movement at constant speed keeping key pressed down**  
-- [X] **0.1.2 Auto unselect targets**  
-- [X] **0.1.1 Colors Palette + History improved + ensure render order + unicode use**  
-- [X] **0.1.0 Minimal full playable version**   
-- [X] **0.0.14 Leaving The Shelter**
-- [X] **0.0.13 Ranged Combat**  
-- [X] **0.0.12 Inventory and items**  
-- [X] **0.0.11 Creating UI**  
-- [X] **0.0.10 Melee**  
-- [X] **0.0.9 Turn Time System**  
-- [X] **0.0.8 Moving Enemies**  
-- [X] **0.0.7 Placing Enemies**  
-- [X] **0.0.6 Generating Shelter**  
-- [X] **0.0.5 Field of View**  
-- [X] **0.0.4 Camera**  
-- [X] **0.0.3 Basic Map**   
-- [X] **0.0.2 Moving around @**  
-- [X] **0.0.1 Setting Up Client-Core Relation**  
-- [X] **0.0.0 Start**  
-
