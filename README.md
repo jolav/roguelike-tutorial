@@ -2,67 +2,9 @@
 
 !["ID: in rainbow text: 'Roguelikedev does the Complete Roguelike Tutorial' and in gray text in the corner: 'v4.0 2020.6-7', over a grayscale ascii dungeon"](https://i.imgur.com/sgsO37A.png)  
 
-3. [Go + Wasm](#go-wasm)  
-2. [Javascript](#javascript)  
-1. [Go + BearLibTerminal](#go-bearlibterminal)  
-
-# **Go-Wasm**  
-
-## **[Play Online](https://roguelike-tutorial-go-wasm.netlify.app/)**  
-
-## ROADMAP
-
-- [X] **Start**
-- [ ] **Setting Up Client-Wasm Relation**
-- [ ] **Moving around @**
-- [ ] **Basic Map**
-- [ ] **Camera**
-- [ ] **Field of View**
-- [ ] **Generating Shelter**
-- [ ] **Placing Enemies**
-- [ ] **Moving Enemies**
-- [ ] **Turn Time System**
-- [ ] **Melee**
-- [ ] **Creating UI**
-- [ ] **Inventory and items**
-- [ ] **Ranged Combat**
-- [ ] **Leaving The Shelter**
-- [ ] **Minimal full playable version**
-
-# **Javascript**  
-
-## **[Play Online](https://roguelike-tutorial-javascript.netlify.app/)**  
-
-## CONTROLS  
-
-NUMPAD  
-"1" -> DOWNLEFT  
-"2" -> DOWN  
-"3" -> DOWNRIGHT  
-"4" -> LEFT  
-"5" -> SKIP  
-"6" -> RIGHT  
-"7" -> UPLEFT  
-"8" -> UP  
-"9" -> UPRIGHT  
-
-KEYBOARD  
-"b" -> DOWNLEFT  
-"j" -> DOWN  
-"n" -> DOWNRIGHT  
-"h" -> LEFT  
-"t" -> SKIP  
-"l" -> RIGHT  
-"y" -> UPLEFT  
-"k" -> UP  
-"u" -> UPRIGHT  
-
-KEYBOARD  
-"q" -> LOOT  
-"1" -> EAT  
-"3" -> HEAL  
-"f" -> FIRE  
-"r" -> SELECT  
+1. [Go + BearLibTerminal (incomplete)](#go-bearlibterminal)  
+2. [Javascript (full playable version)](#javascript)  
+3. [JS + Go  WebAssembly (proof of concept)](#go-wasm)  
 
 # **Go-BearLibTerminal**
 
@@ -119,3 +61,48 @@ Package in the same folder
 - assets folder
 
 enter the folder and double click roguelike.exe
+
+
+# **Javascript**  
+
+## **[Play Online](https://roguelike-tutorial-javascript.netlify.app/)**  
+
+## CONTROLS  
+
+NUMPAD  
+"1" -> DOWNLEFT  
+"2" -> DOWN  
+"3" -> DOWNRIGHT  
+"4" -> LEFT  
+"5" -> SKIP  
+"6" -> RIGHT  
+"7" -> UPLEFT  
+"8" -> UP  
+"9" -> UPRIGHT  
+
+KEYBOARD  
+"b" -> DOWNLEFT  
+"j" -> DOWN  
+"n" -> DOWNRIGHT  
+"h" -> LEFT  
+"t" -> SKIP  
+"l" -> RIGHT  
+"y" -> UPLEFT  
+"k" -> UP  
+"u" -> UPRIGHT  
+
+KEYBOARD  
+"q" -> LOOT  
+"1" -> EAT  
+"3" -> HEAL  
+"f" -> FIRE  
+"r" -> SELECT  
+
+
+# **Go-Wasm**  
+
+Proof of concept:  
+- JS for canvas rendering  
+- Go + WebAssembly for logic  
+
+## **[See Online](https://roguelike-tutorial-go-wasm.netlify.app/)**  
