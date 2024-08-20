@@ -1,5 +1,7 @@
 /* */
 
+console.log('Loading..... _config.js');
+
 const c = {
   VERSION: "0",
   LAG: 0,
